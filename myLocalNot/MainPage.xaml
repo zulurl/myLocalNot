@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="myLocalNot.MainPage">
+
+    <StackLayout Padding="20" Spacing="20">
+        <Label Text="Atualização Meteorológica" FontSize="Large" HorizontalOptions="Center" />
+        <Label x:Name="ServiceStatusLabel" Text="Serviço parado" HorizontalOptions="Center" FontSize="Medium" />
+        <Label x:Name="TemperatureLabel" Text="Temperatura: --" FontSize="Medium" HorizontalOptions="Center" />
+        <Label x:Name="ConditionsLabel" Text="Condições: --" FontSize="Medium" HorizontalOptions="Center" />
+        <Label x:Name="LastUpdateLabel" Text="Última Atualização: --" FontSize="Small" HorizontalOptions="Center" TextColor="Gray" />
+        <Button Text="Iniciar Serviço" Clicked="StartServiceButton_Clicked" HorizontalOptions="Center" BackgroundColor="#4CAF50" TextColor="White" CornerRadius="8"/>
+        <Button Text="Parar Serviço" Clicked="StopServiceButton_Clicked" HorizontalOptions="Center" BackgroundColor="#F44336" TextColor="White" CornerRadius="8"/>
+    </StackLayout>
+</ContentPage>
